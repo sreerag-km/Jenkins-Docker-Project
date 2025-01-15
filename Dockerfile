@@ -1,5 +1,5 @@
 
-FROM  centos:latest
+FROM  oraclelinux:7
 MAINTAINER vikashashoke@gmail.com
 RUN yum install httpd -y
 RUN echo "Home Page">/var/www/html/index.html
