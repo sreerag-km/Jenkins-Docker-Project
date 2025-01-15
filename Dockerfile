@@ -1,7 +1,7 @@
 
 FROM  centos:latest
 MAINTAINER vikashashoke@gmail.com
-RUN apt-get update && apt-get install -y apache2
+RUN yum install httpd -y
 RUN echo "Home Page">/var/www/html/index.html
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
