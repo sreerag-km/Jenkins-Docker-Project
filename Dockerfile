@@ -1,9 +1,7 @@
 
 FROM  centos:latest
 MAINTAINER vikashashoke@gmail.com
-RUN yum install -y httpd \
- zip\
- unzip
+RUN yum install -y httpd 
 WORKDIR /var/www/html/
 RUN echo "Home Page">/var/www/html/index.html
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
