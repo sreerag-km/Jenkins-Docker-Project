@@ -1,5 +1,5 @@
 
-FROM  centos:latest
+FROM  ubuntu:latest
 MAINTAINER vikashashoke@gmail.com
 RUN yum install -y httpd 
 WORKDIR /var/www/html/
