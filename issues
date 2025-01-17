@@ -5,7 +5,7 @@ PermitRootLogin prohibit-password to PermitRootLogin yes
 PasswordAuthentication no to PasswordAuthentication yes
 then, restart ssh service:
 
-sudo service ssh restart.
+sudo service ssh restart..
 
 
 
